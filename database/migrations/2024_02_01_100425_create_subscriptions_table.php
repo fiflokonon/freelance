@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('descripton_subscription');
             $table->double('price');
+            $table->timestamps();
         
         });
     }

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->text('content');
             $table->integer('deadline');
             $table->dateTime('date_comment');
+            $table->timestamps();
             
         });
     }

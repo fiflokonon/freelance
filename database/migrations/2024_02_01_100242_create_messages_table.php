@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('messages', function (Blueprint $table) {
             $table->id();
             $table->text('content');
-            $table->string('date_de_message');
+            $table->string('date_message');
+            $table->timestamps();
         });
     }
 

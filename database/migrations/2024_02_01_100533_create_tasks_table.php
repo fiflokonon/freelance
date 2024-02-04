@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('description_task');
             $table->dateTime('time_date_publication');
+            $table->timestamps();
             $table->double('budget');
             $table->timestamps();
             $table->string('slug');
