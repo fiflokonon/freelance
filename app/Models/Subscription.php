@@ -5,15 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class comments extends Model
+class Subscription extends Model
 {
     use HasFactory;
 
-    protected $table = 'comments';
+
+    protected $table = 'subscriptions';
     protected $fillable = [
-        'content',
-        'deadline',
-        'date_comment'
+        'description_subscription',
+        'price'
 
     ];
 }
