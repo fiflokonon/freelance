@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('last_name');
             $table->string('first_name');
             $table->text('description_users');
             $table->string('email')->unique();
@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('photo');
             $table->rememberToken();
             $table->timestamps();
+            $table->string('role');
             $table->dateTime('start_subscription')->nullable();
             $table->integer('duration_subscription')->nullable();
             
