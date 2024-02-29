@@ -27,6 +27,7 @@ return new class extends Migration
             $table->dateTime('start_subscription')->nullable();
             $table->integer('duration_subscription')->nullable();
             
+            
         });
     }
 

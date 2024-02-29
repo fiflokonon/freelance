@@ -50,9 +50,13 @@ select.selectpicker {
   color: #999;
 }
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary,
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark,
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary:hover,
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark:hover,
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary:focus,
-.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary:active {
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark:focus,
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-primary:active,
+.bootstrap-select > .dropdown-toggle.bs-placeholder.btn-dark:active {
   color: rgba(255, 255, 255, 0.5);
 }
 .bootstrap-select > select {
