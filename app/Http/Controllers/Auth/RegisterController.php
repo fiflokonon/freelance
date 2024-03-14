@@ -29,6 +29,7 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
+    
 
     /**
      * Create a new controller instance.
@@ -49,10 +50,14 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
+        'last_name' => ['required', 'string', 'max:255'],
+        'first_name' => ['required', 'string', 'max:255'], // Ajout du champ 'prenom'
+        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        'password' => ['required', 'string', 'min:8', 'confirmed'],
+        'country' => ['required', 'string', 'max:255'],   // Ajout du champ 'pays'
+        'photo' => ['required', 'image'],             // Ajout du champ 'photo'
+        'role' => ['required', 'string', 'in:developer,employer'], // Ajout du champ 'role'
+    ]);
     }
 
     /**
@@ -64,9 +69,15 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'last_name' => $data['last_name'],
+            'first_name' => $data['first_name'], // Champ 'prenom' ajouté
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'country' => $data['country'],     // Champ 'pays' ajouté
+            'photo' => $data['photo'],   // Champ 'photo' ajouté
+            'role' => $data['role'],     // Champ 'role' ajouté
+
         ]);
+    
     }
 }
