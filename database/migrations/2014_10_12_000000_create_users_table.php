@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('last_name');
             $table->string('first_name');
-            $table->text('description_users');
+            $table->text('description_users')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
@@ -26,8 +26,8 @@ return new class extends Migration
             $table->string('role');
             $table->dateTime('start_subscription')->nullable();
             $table->integer('duration_subscription')->nullable();
-            
-            
+
+
         });
     }
 
