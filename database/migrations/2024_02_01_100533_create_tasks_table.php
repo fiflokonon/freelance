@@ -13,12 +13,21 @@ return new class extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('description_task');
-            $table->dateTime('time_date_publication');
-            $table->double('budget');
+            $table->string('email');
+            $table->string('job_title');
+            $table->string('location');
+            $table->string('job_region');
+            $table->string('job_type');
+            $table->text('job_description');
+            $table->string('company_name');
+            $table->string('company_tagline')->nullable();
+            $table->text('company_description')->nullable();
+            $table->string('company_website')->nullable();
+            $table->string('facebook_username')->nullable();
+            $table->string('twitter_username')->nullable();
+            $table->string('linkedin_username')->nullable();
+            $table->string('featured_image')->nullable(); // Champ pour l'image en vedette
             $table->timestamps();
-            $table->string('slug');
 
         });
     }

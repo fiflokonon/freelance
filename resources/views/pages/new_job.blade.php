@@ -41,18 +41,7 @@
                 <div class="col-lg-8 mb-4 mb-lg-0">
                     <div class="d-flex align-items-center">
                         <div>
-                            <h2>Post A Job</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="post-job.html#" class="btn btn-block btn-light btn-md"><span
-                                    class="icon-open_in_new mr-2"></span>Preview</a>
-                        </div>
-                        <div class="col-6">
-                            <a href="post-job.html#" class="btn btn-block btn-primary btn-md">Save Job</a>
+                            <h2>Nouveau job</h2>
                         </div>
                     </div>
                 </div>
@@ -60,29 +49,24 @@
             <div class="row mb-5">
                 <div class="col-lg-12">
                     <form class="p-4 p-md-5 border rounded" method="post">
-                        <h3 class="text-black mb-5 border-bottom pb-2">Job Details</h3>
+                        <h3 class="text-black mb-5 border-bottom pb-2">Details du job</h3>
                         <div class="form-group">
-                            <label for="company-website-tw d-block">Upload Featured Image</label> <br>
+                            <label for="company-website-tw d-block">Image à mettre en vedette</label> <br>
                             <label class="btn btn-primary btn-md btn-file">
-                                Browse File<input type="file" hidden>
+                                Choisir un fichier<input type="file" hidden>
                             </label>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email" placeholder="you@yourdomain.com">
+                            <label for="job-title">Titre du job</label>
+                            <input type="text" class="form-control" name="job_title" id="job-title" placeholder="Product Designer">
                         </div>
                         <div class="form-group">
-                            <label for="job-title">Job Title</label>
-                            <input type="text" class="form-control" id="job-title" placeholder="Product Designer">
+                            <label for="job-location">Lieu</label>
+                            <input type="text" class="form-control" name="job_location" id="job-location" placeholder="e.g. New York">
                         </div>
                         <div class="form-group">
-                            <label for="job-location">Location</label>
-                            <input type="text" class="form-control" id="job-location" placeholder="e.g. New York">
-                        </div>
-                        <div class="form-group">
-                            <label for="job-region">Job Region</label>
-                            <select class="selectpicker border rounded" id="job-region" data-style="btn-black"
-                                    data-width="100%" data-live-search="true" title="Select Region">
+                            <label for="job-region">Région ou Pays du job</label>
+                            <select class="selectpicker border rounded" id="job-region" name="job_region" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Region">
                                 <option>Anywhere</option>
                                 <option>San Francisco</option>
                                 <option>Palo Alto</option>
@@ -95,28 +79,23 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="job-type">Job Type</label>
-                            <select class="selectpicker border rounded" id="job-type" data-style="btn-black"
+                            <label for="job-type">Type de job</label>
+                            <select class="selectpicker border rounded" name="job_type" id="job-type" data-style="btn-black"
                                     data-width="100%" data-live-search="true" title="Select Job Type">
-                                <option>Part Time</option>
-                                <option>Full Time</option>
+                                <option>Temps partiel</option>
+                                <option>Temps plein</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="job-description">Job Description</label>
+                            <label for="job-description">Description du job</label>
                             <div class="editor" id="editor-1">
-                                <p>Write Job Description!</p>
+                                <p>Entrez la Description!</p>
                             </div>
                         </div>
-                        <h3 class="text-black my-5 border-bottom pb-2">Company Details</h3>
+                        <h3 class="text-black my-5 border-bottom pb-2">Informations de l'employeur</h3>
                         <div class="form-group">
-                            <label for="company-name">Company Name</label>
+                            <label for="company-name">Nom de l'employeur</label>
                             <input type="text" class="form-control" id="company-name" placeholder="e.g. New York">
-                        </div>
-                        <div class="form-group">
-                            <label for="company-tagline">Tagline (Optional)</label>
-                            <input type="text" class="form-control" id="company-tagline"
-                                   placeholder="e.g. New York">
                         </div>
                         <div class="form-group">
                             <label for="job-description">Company Description (Optional)</label>
@@ -127,21 +106,6 @@
                         <div class="form-group">
                             <label for="company-website">Website (Optional)</label>
                             <input type="text" class="form-control" id="company-website" placeholder="https://">
-                        </div>
-                        <div class="form-group">
-                            <label for="company-website-fb">Facebook Username (Optional)</label>
-                            <input type="text" class="form-control" id="company-website-fb"
-                                   placeholder="companyname">
-                        </div>
-                        <div class="form-group">
-                            <label for="company-website-tw">Twitter Username (Optional)</label>
-                            <input type="text" class="form-control" id="company-website-tw"
-                                   placeholder="@companyname">
-                        </div>
-                        <div class="form-group">
-                            <label for="company-website-tw">Linkedin Username (Optional)</label>
-                            <input type="text" class="form-control" id="company-website-tw"
-                                   placeholder="companyname">
                         </div>
                         <div class="form-group">
                             <label for="company-website-tw d-block">Upload Logo</label> <br>
