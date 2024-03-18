@@ -25,8 +25,8 @@ class User extends Authenticatable
         'description_users',
         'country',
         'photo',
-        'role'
-
+        'role',
+        'cv_link'
     ];
 
     /**

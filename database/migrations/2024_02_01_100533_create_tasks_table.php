@@ -26,7 +26,8 @@ return new class extends Migration
             $table->string('facebook_username')->nullable();
             $table->string('twitter_username')->nullable();
             $table->string('linkedin_username')->nullable();
-            $table->string('featured_image')->nullable(); // Champ pour l'image en vedette
+            $table->string('featured_image')->nullable();
+            $table->foreignId('user_id');
             $table->timestamps();
 
         });

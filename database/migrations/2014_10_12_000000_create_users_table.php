@@ -24,6 +24,7 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->string('role');
+            $table->string('cv_link')->nullable();
             $table->dateTime('start_subscription')->nullable();
             $table->integer('duration_subscription')->nullable();
 

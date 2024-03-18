@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->text('content');
             $table->string('date_message');
+            $table->foreignId('sender_id')->constrained('users');
+            $table->foreignId('receiver_id')->constrained('users');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

@@ -11,13 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('comments', function (Blueprint $table) {
+        Schema::create('job_applications', function (Blueprint $table) {
             $table->id();
-            $table->text('content');
-            $table->integer('deadline');
-            $table->dateTime('date_comment');
+            $table->foreignId('user_id');
+            $table->foreignId('task_id');
+            $table->string('application_status');
+            $table->string('cover')->nullable();
+            $table->string('comment')->nullable();
+            $table->boolean('status')->default(false);
             $table->timestamps();
-            
         });
     }
 
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('comments');
+        Schema::dropIfExists('job_applications');
     }
 };

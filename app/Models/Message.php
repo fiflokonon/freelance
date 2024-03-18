@@ -12,7 +12,9 @@ class Message extends Model
     protected $table = 'messages';
     protected $fillable = [
         'content',
-        'date_message'
-
+        'sender_id',
+        'receiver_id',
+        'date_message',
+        'status'
     ];
 }

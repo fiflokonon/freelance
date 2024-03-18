@@ -5,15 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Comment extends Model
+class JobApplication extends Model
 {
     use HasFactory;
-
-    protected $table = 'comments';
+    protected $table = 'job_applications';
     protected $fillable = [
-        'content',
-        'deadline',
-        'date_comment'
-
+        'task_id',
+        'user_id',
+        'application_status',
+        'cover',
+        'status'
     ];
 }
