@@ -55,7 +55,7 @@ class RegisterController extends Controller
         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
         'password' => ['required', 'string', 'min:8', 'confirmed'],
         'country' => ['required', 'string', 'max:255'],   // Ajout du champ 'pays'
-        'photo' => ['required', 'image'],             // Ajout du champ 'photo'
+        'photo' => ['nullable', 'image'],             // Ajout du champ 'photo'
         'role' => ['required', 'string', 'in:developer,employer'], // Ajout du champ 'role'
     ]);
     }
@@ -74,7 +74,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'country' => $data['country'],     // Champ 'pays' ajouté
-            'photo' => $data['photo'],   // Champ 'photo' ajouté
+            'photo' => $data['photo'] ?? '',   // Champ 'photo' ajouté
             'role' => $data['role'],     // Champ 'role' ajouté
         ]);
 
