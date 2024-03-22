@@ -58,7 +58,7 @@
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12">
-                                <button type="submit" class="btn px-4 btn-primary text-white">S'inscrire</button>
+                                <button type="submit" class="btn px-4 btn-primary text-white">Se connecter</button>
                             </div>
                         </div>
                         <div class="row">

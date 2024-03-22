@@ -25,5 +25,15 @@ class HomeController extends Controller
     {
         #if (auth()->user()->role == 'developer')
         return view('pages.dashboard.home_dev');
+
+    }
+         public function employer(){
+             #if (auth()->user()->role == 'employer')
+              return view('pages.dashboard.home_employer');
+
+    }
+        public function admin(){
+             #if (auth()->user()->role == '1')
+             return view('pages.dashboard.home_admin');
     }
 }

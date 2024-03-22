@@ -27,48 +27,38 @@
         Informations
     </div>
 
+    <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCandidatures"
-           aria-expanded="true" aria-controls="collapseCandidatures">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span> Candidatures</span>
-        </a>
-        <div id="collapseCandidatures" class="collapse" aria-labelledby="headingCandidatures" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Types de candidatures</h6>
-                <a class="collapse-item" href="#">Candidatures acceptées</a>
-                <a class="collapse-item" href="#">Candidatures refusées</a>
-                <a class="collapse-item" href="#">Candidatures en cours</a>
-                <a class="collapse-item" href="#">Candidatures rejetées</a>
-            </div>
-        </div>
-    </li>
-    
-       <li class="nav-item">
         <a class="nav-link" href="charts.html">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Mes offres d'emplois</span></a>
+            <span>Les candidats</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Mes offres d'emploi</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Entités de recrutement</span></a>
     </li>
          
 
-    
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilisateurs"
-           aria-expanded="true" aria-controls="collapseUtilisateurs">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+           aria-expanded="true" aria-controls="collapseTwo">
             <i class="fas fa-fw fa-cog"></i>
             <span>Utilisateurs</span>
         </a>
-        <div id="collapseUtilisateurs" class="collapse" aria-labelledby="headingUtilisateurs" data-parent="#accordionSidebar">
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Types d'utilisateurs</h6>
-                
-                <a class="collapse-item" href="{{ route('userlist') }}">Employeurs</a>
-                
-            </div>
+                <a class="collapse-item" href="{{ route('userlist') }}">Développeurs</a>
+                            </div>
         </div>
     </li>
     
-
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 

@@ -27,6 +27,7 @@
         Informations
     </div>
 
+    <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCandidatures"
            aria-expanded="true" aria-controls="collapseCandidatures">
@@ -44,14 +45,18 @@
         </div>
     </li>
     
-       <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link" href="charts.html">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>Mes offres d'emplois</span></a>
+            <span> Offres d'emploi</span></a>
     </li>
-         
+    <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span> Entités de recrutement</span></a>
+    </li>
+        
 
-    
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilisateurs"
            aria-expanded="true" aria-controls="collapseUtilisateurs">
@@ -61,14 +66,13 @@
         <div id="collapseUtilisateurs" class="collapse" aria-labelledby="headingUtilisateurs" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Types d'utilisateurs</h6>
-                
+                <a class="collapse-item" href="{{ route('userlist') }}">Développeurs</a>
                 <a class="collapse-item" href="{{ route('userlist') }}">Employeurs</a>
-                
+                <a class="collapse-item" href="{{ route('userlist') }}">Administrateurs</a>
             </div>
         </div>
     </li>
     
-
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 

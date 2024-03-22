@@ -4,10 +4,10 @@
             <div class="site-logo col-6"><a href="/">Page d'emploi</a></div>
             <nav class="mx-auto site-navigation">
                 <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-                    <li><a href="/" class="nav-link active">Acceuil</a></li>
-                    <li><a href="about.html">Taches</a></li>
+                    <li><a href="/" class="nav-link active">Accueil</a></li>
+                    <li><a href="about.html">Tâches</a></li>
                     <li class="has-children">
-                        <a href="job-listings.html">Developpeurs</a>
+                        <a href="job-listings.html">Développeurs</a>
                     </li>
                     <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span>Poster un emploi</a></li>
                     <li class="d-lg-none"><a href="login.html">S'inscrire / s'identifier</a></li>

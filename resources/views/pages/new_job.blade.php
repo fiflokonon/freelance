@@ -94,7 +94,7 @@
                         </div>
                         <h3 class="text-black my-5 border-bottom pb-2">Informations de l'employeur</h3>
                         <div class="form-group">
-                        3    <label for="company-name">Nom de l'employeur</label>
+                          <label for="company-name">Nom de l'employeur</label>
                             <input type="text" class="form-control" id="company-name" placeholder="e.g. New York">
                         </div>
                         <div class="form-group">

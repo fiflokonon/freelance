@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 @include('partials.head')
+@csrf
 <body id="top">
 <div id="overlayer"></div>
 <div class="loader">
@@ -37,14 +38,14 @@
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
                                 <select class="selectpicker" data-style="btn-white btn-lg" data-width="100%"
-                                        data-live-search="true" title="Selectiomnner la Region">
+                                        data-live-search="true" title="Selectionner la Region">
                                     <option>Mali</option>
                                     <option>Benin</option>
                                     <option>Nigeria</option>
                                     <option>Congo</option>
                                     <option>Rwanda</option>
                                     <option>Niger</option>
-                                    <option>Cote d'Ivoire</option>
+                                    <option>Côte d'Ivoire</option>
                                     <option>Algerie</option>
                                     <option>Afrique du Sud</option>
                                 </select>
@@ -58,7 +59,7 @@
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
                                 <button type="submit" class="btn btn-primary btn-lg btn-block text-white btn-search">
-                                    <span class="icon-search icon mr-2"></span>Search Job
+                                    <span class="icon-search icon mr-2"></span>Rechercher Job
                                 </button>
                             </div>
                     </form>
@@ -122,49 +123,49 @@
                 <div class="col-6 col-lg-3 col-md-6 text-center">
                     <ul>
                         <li><img src="images/app_mobile.png" alt="Image" class="img-fluid logo-1"></li>
-                        <li>Developpeur d'application mobile</li>
+                        <li>Développeur d'application mobile</li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-3 col-md-6 text-center">
                     <ul>
                         <li><img src="images/dev_back.png" alt="Image" class="img-fluid logo-2"></li>
-                        <li>Developpeur Backend</li>
+                        <li>Développeur Backend</li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-3 col-md-6 text-center">
                     <ul>
-                        <li><img src="images/log_bureau.png" alt="Image" class="img-fluid logo-3">
-                        <li>Developpeur de logiciels_bureau</li>
+                        <li><img src="images/im1.jpg" alt="Image" class="img-fluid logo-3">
+                        <li>Développeur de logiciels_bureau</li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-3 col-md-6 text-center">
                     <ul>
                         <li><img src="images/full-stack.jpeg" alt="Image" class="img-fluid logo-4"></li>
-                        <li>Developpeur Full-Stack</li>
+                        <li>Développeur Full-Stack</li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-3 col-md-6 text-center">
                     <ul>
-                        <li><img src="images/dev_se.jpeg alt=" Image" class="img-fluid logo-5"></li>
-                        <li>Developpeur de systeme d'exploitation</li>
+                        <li><img src="/images/dev_se.jpeg alt=" Image" class="img-fluid logo-5"></li>
+                        <li>Développeur de système d'exploitation</li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-3 col-md-6 text-center">
                     <ul>
                         <li><img src="images/dev_jeux.png" alt="Image" class="img-fluid logo-6"></li>
-                        <li>Developpeur des jeux</li>
+                        <li>Développeur des jeux</li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-3 col-md-6 text-center">
                     <ul>
                         <li><img src="images/int_artifi.webp" alt="Image" class="img-fluid logo-7"></li>
-                        <li>Developpeur en intelligence artificielle</li>
+                        <li>Développeur en intelligence artificielle</li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-3 col-md-6 text-center">
                     <ul>
                         <li><img src="images/dev_front.jpg" alt="Image" class="img-fluid logo-8"></li>
-                        <li>Developpeur Frontend</li>
+                        <li>Développeur Frontend</li>
                     </ul>
                 </div>
             </div>
@@ -172,7 +173,7 @@
     </section>
     <section>
         <div class="col-md-7">
-            <h2 class="section-title mb-2">Les developpeurs les mieux notees</h2>
+            <h2 class="section-title mb-2">Les développeurs les mieux notees</h2>
         </div>
         <div></div>
         <div></div>

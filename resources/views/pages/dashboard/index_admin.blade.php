@@ -7,7 +7,7 @@
 <div id="wrapper">
 
     <!-- Sidebar -->
-    @include('partials.dashboard.sidebar')
+    @include('partials.dashboard.sidebar_admin')
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
