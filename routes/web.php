@@ -24,8 +24,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'employer'])->name('home');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'admin'])->name('home');
+Route::get('/employer', [App\Http\Controllers\HomeController::class, 'index'])->name('employer');
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
 Route::get('/newjob', [JobController::class, 'new_job'])->middleware('auth')->name('new_job');
 Route::get('/users', [UserController::class, 'users'])->middleware('auth')->name('userlist');
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -23,17 +24,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        #if (auth()->user()->role == 'developer')
-        return view('pages.dashboard.home_dev');
-
+            $user= Auth::user();
+            if($user->role=='developer'){
+                return view('pages.dashboard.home_dev');
+            }elseif ($user->role=='employer') {
+                return view('pages.dashboard.home_employer');
+            }elseif ($user->role=='1') {
+                return view('pages.dashboard.home_admin');
+            }
     }
-         public function employer(){
-             #if (auth()->user()->role == 'employer')
-              return view('pages.dashboard.home_employer');
-
-    }
-        public function admin(){
-             #if (auth()->user()->role == '1')
-             return view('pages.dashboard.home_admin');
-    }
+        
 }
